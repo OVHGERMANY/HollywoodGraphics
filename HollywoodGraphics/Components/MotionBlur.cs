@@ -6,7 +6,7 @@ public class HfxMotionBlur
 {
     public static void UpdateSettings()
     {
-        var camera = CameraClass.Instance?.Camera;
+        var camera = EFT.CameraControl.CameraManager.Instance?.Camera;
 
         if (camera == null)
         {

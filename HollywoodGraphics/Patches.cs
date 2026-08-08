@@ -31,7 +31,9 @@ public class GraphicsRaidInitPatch : ModulePatch
 {
     protected override MethodBase GetTargetMethod()
     {
-        return typeof(TarkovApplication).GetMethod(nameof(TarkovApplication.method_41));
+        // Every raid-start path (Run, InternalStartGame, OnReadyToStartMatchingAsync) converges here,
+        // after _raidSettings is populated and before LocalGameCreate loads the location scene.
+        return typeof(TarkovApplication).GetMethod(nameof(TarkovApplication.LocalGameMatching));
     }
 
     [PatchPrefix]

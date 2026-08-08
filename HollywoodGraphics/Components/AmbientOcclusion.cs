@@ -8,7 +8,7 @@ public class AmbientOcclusion
 
     public AmbientOcclusion()
     {
-        var camera = CameraClass.Instance?.Camera;
+        var camera = EFT.CameraControl.CameraManager.Instance?.Camera;
 
         if (camera == null)
         {
