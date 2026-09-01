@@ -15,7 +15,7 @@ namespace HollywoodGraphics;
 public class Plugin : BaseUnityPlugin
 {
     public const string MajorMinorVersion = "2.0";
-    public const string HollywoodGraphicsVersion = $"{MajorMinorVersion}.0";
+    public const string HollywoodGraphicsVersion = $"{MajorMinorVersion}.1";
     public static ManualLogSource Log;
 
     public static GraphicsConfig GraphicsConfig;

@@ -10,10 +10,10 @@ param(
     [string]$Configuration = 'Release',
 
     [ValidatePattern('^\d+\.\d+\.\d+$')]
-    [string]$Version = '2.0.0',
+    [string]$Version = '2.0.1',
 
     [ValidatePattern('^\d+\.\d+\.\d+$')]
-    [string]$SptVersion = '4.1.2'
+    [string]$SptVersion = '4.1.3'
 )
 
 Set-StrictMode -Version Latest
